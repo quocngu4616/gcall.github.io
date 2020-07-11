@@ -1,0 +1,487 @@
+.callContainer {
+    position: fixed;
+    z-index: 1000;
+}
+
+.callContainer .buttonWrap {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: solid 3px #fff;
+    animation: play 2s ease infinite;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: fixed;
+    z-index: 100000000;
+    right: 80px;
+    bottom: 80px;
+}
+
+.buttonWrap button {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    /* position: absolute;
+    left: 0px;
+    top: 0px; */
+}
+
+.buttonWrap:focus {
+    outline: aqua
+}
+
+/*------------------------- xử lý panelCall */
+
+.callContainer .panelCall {
+    position: fixed;
+    width: 280px;
+    height: 504px;
+    z-index: 10000000000;
+    bottom: 0;
+    right: 0;
+    border: 3px solid #000;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 15px 15px 8px 8px;
+    /*position: fixed;
+    */
+    background-color: rgba(63, 61, 61, 0.9);
+    /* visibility: visible; */
+}
+
+.closePanel {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.closePanel .line {
+    margin-left: 100px;
+    width: 40px;
+    background-color: #fff;
+    height: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    /*border: 1px solid red;
+    */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.inputControl {
+    border-bottom: 1px solid #fff;
+    padding: 8px 0;
+    border-color: rgba(255, 255, 255, 0.57);
+}
+
+.inputControl input {
+    height: 28px;
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+    font-size: 19px;
+    width: 81%;
+    caret-color: white;
+    overflow: hidden;
+    color: white;
+    outline: none !important;
+}
+
+.inputControl .del {
+    height: 17px;
+    border: 0;
+    background-color: transparent;
+}
+
+.inputControl .del:focus {
+    outline: none;
+}
+
+.inputControl .del img {
+    height: 100%;
+    color: #000;
+}
+
+.keyBoard {
+    padding: 0 20px;
+}
+
+.keyBoard .row {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.keyBoard .row button:focus {
+    outline: none;
+}
+
+/*----------------------------------------------*/
+
+.keyBoard .row:nth-child(1) button:nth-child(1) {
+    background-image: url('../img/1.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoard .row:nth-child(1) button:nth-child(2) {
+    background-image: url('../img/2.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoard .row:nth-child(1) button:nth-child(3) {
+    background-image: url('../img/3.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+/*----------------------------------------------*/
+
+.keyBoard .row:nth-child(2) button:nth-child(1) {
+    background-image: url('../img/4.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoard .row:nth-child(2) button:nth-child(2) {
+    background-image: url('../img/5.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoard .row:nth-child(2) button:nth-child(3) {
+    background-image: url('../img/6.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+/*----------------------------------------------*/
+
+.keyBoard .row:nth-child(3) button:nth-child(1) {
+    background-image: url('../img/7.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoard .row:nth-child(3) button:nth-child(2) {
+    background-image: url('../img/8.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoard .row:nth-child(3) button:nth-child(3) {
+    background-image: url('../img/9.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+/*----------------------------------------------*/
+
+.keyBoard .row:nth-child(4) {
+    margin-left: 80px;
+}
+
+.keyBoard .row:nth-child(4) button {
+    background-image: url('../img/0.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.callState {
+    background-image: url('../img/callState.png');
+    background-size: 20%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #31D68B;
+    border: none;
+    margin-left: 35px;
+}
+
+.callState:focus {
+    outline: none;
+}
+
+/*------------------------- xử lý panelCalling */
+
+.callContainer .panelCalling {
+    position: fixed;
+    width: 280px;
+    height: 180px;
+    z-index: 10000000000;
+    bottom: 0;
+    left: 0px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    padding: 15px 15px 8px 8px;
+    /*position: fixed;
+    */
+    background-color: rgba(63, 61, 61, 0.9);
+    /* visibility: visible; */
+}
+
+.closePanelCalling {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.closePanelCalling .line {
+    margin-left: 100px;
+    width: 40px;
+    background-color: #fff;
+    height: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    /*border: 1px solid red;
+    */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.stateControl {
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    /* margin-bottom: 50px; */
+}
+
+/* .keyBoardCalling {
+    padding: 0 20px;
+}
+
+.keyBoardCalling .row {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.keyBoardCalling .row button:focus {
+    outline: none;
+} */
+
+.keyBoardCalling .row:nth-child(1) button:nth-child(1) {
+    background-image: url('../img/8.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoardCalling .row:nth-child(1) button:nth-child(2) {
+    background-image: url('../img/8.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoardCalling .row:nth-child(1) button:nth-child(3) {
+    background-image: url('../img/8.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoardCalling .row:nth-child(2) button:nth-child(1) {
+    background-image: url('../img/8.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoardCalling .row:nth-child(2) button:nth-child(2) {
+    background-image: url('../img/8.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.keyBoardCalling .row:nth-child(2) button:nth-child(3) {
+    background-image: url('../img/8.png');
+    width: 56px;
+    height: 56px;
+    padding: 0;
+    background-size: 135%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin: 8px 8px;
+}
+
+.callingState {
+    background-image: url('../img/callState.png');
+    background-size: 20%;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #d63131;
+    border: none;
+    margin-left: 35px;
+    /* margin-top: 20px; */
+}
+
+.callingState:focus {
+    outline: none;
+}
+
+@keyframes play {
+    0% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+    }
+    15% {
+        box-shadow: 0 0 0 7px rgba(0, 255, 17, 0.4);
+    }
+    25% {
+        box-shadow: 0 0 0 12px rgba(0, 255, 17, 0.4), 0 0 0 20px rgba(0, 255, 17, 0.2);
+    }
+    25% {
+        box-shadow: 0 0 0 17px rgba(0, 255, 17, 0.4), 0 0 0 30px rgba(0, 255, 17, 0.2);
+    }
+}
